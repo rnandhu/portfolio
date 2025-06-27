@@ -15,14 +15,15 @@ steps:
     versionSpec: '20.x'
   displayName: 'Install Node.js'
 
+
 - task: SonarCloudPrepare@1
   inputs:
-    SonarCloud: 'YourServiceConnectionName'
-    organization: 'your-sonarcloud-org'
+    SonarCloud: 'SonarCloud'
+    organization: 'nandhu0661'
     scannerMode: 'CLI'
     configMode: 'manual'
-    cliProjectKey: 'your-project-key'
-    cliProjectName: 'your-project-name'
+    cliProjectKey: '98f1e788b0672826ce949006321d5a9614efc227'
+    cliProjectName: 'Portfolio'
     extraProperties: |
       sonar.sources=.
       sonar.exclusions=node_modules/**
